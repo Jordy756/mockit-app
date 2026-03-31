@@ -30,7 +30,7 @@ const initialPreviewContent = `{
 }`;
 ---
 
-<section class="flex-1 flex flex-col min-h-100 rounded-md overflow-hidden border border-neutral-800">
+<section class="flex-1 w-full flex flex-col min-h-100 rounded-md overflow-hidden border border-neutral-800">
   <header class="flex items-center justify-between gap-8 p-4 border-b border-neutral-800 bg-neutral-700">
     <h2>Live Preview</h2>
     <button class="flex items-center gap-2">
@@ -51,10 +51,11 @@ const initialPreviewContent = `{
       Error al generar los mocks. Por favor, intenta nuevamente.
     </p>
   </div>
-  <footer>
-    <Button id="copy-link-btn" class="w-full hidden" disabled>
+  <footer id="mock-footer" class="p-4 border-t border-neutral-800 bg-neutral-700 hidden">
+    <p id="mock-link" class="break-all text-sm">https://api.example.com/abc123/mocks/</p>
+    <!-- <Button id="copy-link-btn" class="w-full hidden" disabled>
       Copiar Enlace
       <CopyLinkIcon id="copy-link-btn" class="w-6 h-6" />
-    </Button>
+    </Button> -->
   </footer>
 </section>
